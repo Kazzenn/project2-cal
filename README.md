@@ -7,9 +7,8 @@
 
 ### ขั้นตอนที่ 1: Fork โปรเจกต์
 
-1. ไปที่ [GitHub Repository](https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME).
-2. คลิกที่ปุ่ม "Fork" ที่มุมขวาบน
-3. ล็อคอินบัญชี GitHub แล้วกด fork
+1. คลิกที่ปุ่ม "Fork" ที่มุมขวาบน
+2. ล็อคอินบัญชี GitHub แล้วกด fork
 
 ### ขั้นตอนที่ 2: Clone โปรเจกต์
 
