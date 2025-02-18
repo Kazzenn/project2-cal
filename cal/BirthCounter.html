@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>คำนวณวันเกิด</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <style>
+.btn-convert {
+    background-color: #29aad5;
+    font-family: 'Kanit', sans-serif;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-convert:hover {
+    background-color: #1393c9;
+}
+
+#birthday-gregorian-output, #age-output {
+    font-weight: bold;
+    color: #007bff;
+    font-size: 18px;
+}
+
+input {
+    font-family: 'Kanit', sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+}
+p {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="portfolio-container">
+        <img src="../imgs/cake.png" alt="Profile Picture" class="profile-pic2">
+        <h1>คำนวณวันเกิด </h1>
+        <p>โปรดตรวจสอบวันที่ของอุปกรณ์ให้เป็นปุจจุบัน</p>
+
+        <div>
+            <label for="birthday-buddhist">กรุณากรอกวันที่ในรูปแบบ วัน-เดือน-ปี (เช่น 15-03-2568):</label>
+            <input type="text" id="birthday-buddhist" placeholder="กรอกวัน-เดือน-ปี เช่น 15-03-2568">
+            <button onclick="convertBuddhistToGregorian()" class="btn-convert">คำนวณ</button>
+            <p>วันเกิด (ค.ศ.): <span id="birthday-gregorian-output"></span></p>
+            <p>อายุปัจจุบัน: <span id="age-output"></span></p>
+        </div>
+
+        <br>
+        <hr class="custom-hr">
+        <div class="links">
+            <a href="../index.html">ย้อนกลับ</a>
+        </div>
+    </div>
+
+    <script src="../cal/cal.js" defer></script>
+    <script src="../script.js"></script>
+
+</body>
+
+</html>

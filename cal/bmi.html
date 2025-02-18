@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Caculator</title>
+    <link rel="icon" type="image/x-icon" href="#">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+
+</head>
+
+<body>
+
+    <div class="portfolio-container">
+        <img src="../imgs/bmi.png" alt="Profile Picture" class="profile-pic2">
+        <h1>คำนวณค่าดัชนีมวลกาย (BMI)</h1>
+        <p>BMI (Body Mass Index) คือค่าที่ใช้ประเมินภาวะน้ำหนักของร่างกายเมื่อเทียบกับส่วนสูง <br><br>
+            กรอกข้อมูลน้ำหนักส่วนสูง</p>
+        <div>
+            <label for="weight">น้ำหนัก (กก.):</label>
+            <input type="number" id="weight" placeholder="กรอกน้ำหนัก" step="0.1">
+        </div>
+
+        <div>
+            <label for="height">ส่วนสูง (ซม.):</label>
+            <input type="number" id="height" placeholder="กรอกส่วนสูง" step="0.1">
+        </div>
+
+        <br>
+        <h2>BMI: <span id="bmi-result">0.00</span></h2>
+        <img src="../imgs/bmi-info.jpg" alt="BMI Picture" class="picture-web">
+       
+       
+        <hr class="custom-hr">
+       
+        <div class="links">
+            <a href="../index.html">ย้อนกลับ</a>
+        </div>
+    </div>
+
+</body>
+<script src="../cal/cal.js" defer></script>
+<script src="../script.js"></script>
+
+</html>

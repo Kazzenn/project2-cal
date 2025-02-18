@@ -1,0 +1,127 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    background-color: #d3d3d3;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    transition: background 0.3s ease;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.portfolio-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 15px rgb(252, 252, 252);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin-top: 50px;
+    margin: auto;
+    position: relative;
+    /* ทำให้กล่องอยู่กลาง */
+    transition: opacity 1s ease-out, transform 1s ease-out, filter 1s ease-out;
+    opacity: 0;
+    transform: translateY(80px);
+    /* เลื่อนลงมา */
+    filter: blur(10px);
+    /* เบลอตอนเริ่มต้น */
+    max-height: 90vh;
+    overflow-y: auto;
+    /* เพิ่ม scroll ถ้าจำเป็น */
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.portfolio-container::-webkit-scrollbar {
+    display: none;
+}
+
+/* ทำให้กล่อง Fade-in และ Slide-in */
+.portfolio-container.show {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    /* ทำให้ไม่เบลอ */
+}
+
+
+#darkModeToggle:hover {
+    color: #2b2b2b;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+
+.profile-pic2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.picture-web {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.links a {
+    display: block;
+    background: #262626;
+    color: #eeeeee;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 10px;
+    margin: 8px 0;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    background: #6f6f6f;
+}
+
+hr.custom-hr {
+    width: 95%;
+    height: 3px;
+    background-color: rgb(91, 91, 91);
+    border: none;
+    margin: 20px auto;
+}
+
+
+/* ฟอร์มคำนวน */  
+input {
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+}
