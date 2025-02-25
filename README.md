@@ -15,16 +15,16 @@
 คลิกที่โปรเจกต์ที่ fork มาจาก GitHub และคัดลอก URL สำหรับ clone:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
+git clone git@github.com:Kazzenn/project2-cal.git
 ```
 
 ##  Deploy โปรเจกต์นี้บน Vercel
 
 1. ไปที่เว็บไซต์ Vercel.
 2. ลงชื่อเข้าใช้
-3. บนแดชบอร์ดของ Vercel แล้วกดปุ่ม New Project
+3. ไปที่แดชบอร์ดของ Vercel แล้วกดปุ่ม New Project
 4. เลือก repository ของ GitHub ที่ fork มา หรือกด import โปรเจกต์
-5. กด "Deploy".
+5. กด "Deploy"
 
 
 
